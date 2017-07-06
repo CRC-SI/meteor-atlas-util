@@ -1,7 +1,7 @@
 Package.describe({
-  name: 'urbanetic:atlas-util',
+  name: 'crc4si:atlas-util',
   summary: 'A wrapper with utilities for using Atlas in Meteor.',
-  version: '0.3.0',
+  version: '0.3.0_1',
   git: 'https://github.com/Urbanetic/meteor-atlas-util.git'
 });
 
@@ -12,11 +12,11 @@ Package.onUse(function(api) {
     'underscore',
     'aramk:requirejs@2.1.15',
     'aramk:q@1.0.1',
-    'urbanetic:atlas@0.8.1',
+    'crc4si:atlas@0.9.0_5',
     'urbanetic:utility@1.2.0'
   ], ['client', 'server']);
   api.use([
-    'urbanetic:atlas-cesium@0.8.1'
+    'crc4si:atlas-cesium@0.9.0_5'
   ], ['client', 'server'], {weak: true});
   api.use(['deps',
     'less',
@@ -53,7 +53,7 @@ Package.onTest(function (api) {
 
     'urbanetic:utility',
     'peterellisjones:describe',
-    'urbanetic:atlas-util'
+    'crc4si:atlas-util'
   ]);
 
   api.addFiles([
